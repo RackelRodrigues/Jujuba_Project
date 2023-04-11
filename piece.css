@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+}
+   
+header{
+  padding: 3em;
+  background: #FAD5DCff;
+      
+}
+  
+   
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+    
+nav>a{
+  width: 48px;
+    }
+
+/* parte svg*/
+/* aqui só cosnegui fazer com px, eu acho deve ser por causa do calculo so svg qu ejá vem com um proprio*/
+.contato{
+  width: 40px;
+  margin-top: .5rem;
+        
+}
+
+.instagram{
+  width: 45px;
+  margin-top: .5rem;
+}
+
+.email{
+  width: 45px;
+  margin-top: .5rem;
+}
+
+#logopiece{
+  width: 105px;
+  border-radius: 5px 5px;
+}
+  
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  gap: .8rem;
+      
+}
+/* aqui coloquei a linha estudar sobre*/
+a{
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #90e0ef;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+  /* terminou*/
+
+li>a{
+ font-size: 22px;
+  color: black;
+  margin-left: 15px;
+  text-decoration: none;
+
+    
+}
+    
+li>a:hover{
+  color:#fff;
+   
+}
+
+
+
+#tortinhaf{
+  width: 320px;
+  border-radius: 5px 5px;
+  border-width: 12px;
+  border-color:  #B0EAE7;
+  border-style: solid;
+}
+
+#tortinhaf:hover{
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  display: block;
+}
+
+
+
+.comida{
+  position: absolute;
+  top: 60%;
+  right: 74.5%;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Slabo 23px', serifa;
+}
+.conteiner{
+  display: flex;
+  gap: 100px;
+  margin: 40px 30px 70px 70px;
+    
+}
+  
+#contato,#email,#instagram{
+  font-family: 'Slabo 23px', serifa;
+  font-weight: bold;
+  
+  
+  
+}
+   
+.caixa{
+  height: 150px;
+  background-color: #A9DDD9ff;
+  width: 500px;
+  margin: 20px 40px 20px 40px;
+  border-radius: 10px 10px;
+  justify-content: space-between;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 3.0;
+  font-size: 22px;
+  margin-bottom: 100px; 
+}
+  
+.informacoes{
+  color: #E2797D;
+   
+  
+}
+/* para fazer linha transparente*/
+hr{
+  margin: 40px 0;
+}
+
+.hr-1{
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #90e0ef, transparent);
+  
+}
+/*terminou*/
+
+.caixa-fotinhas{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.fotinhas{
+  width: 256px;
+  border-radius: 3%;
+  border-color:  #B0EAE7;
+  border-style: solid;
+  border-width: 12px;
+
+}
+#cardapio{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Slabo 23px', serifa;
+  margin: 3rem;
+  font-weight: bold;
+  text-decoration:overline #E2797D;
+}
+
+.limao{
+  display: flex;
+  font-size: 30px;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  color:#E2797D;
+  text-decoration:underline #90e0ef;
+}
+
+#alert{
+  margin: 0 auto;
+  width: 500px;
+  height: auto;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 1.6rem;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  font-family: 'Maven Pro', sans-serif;
+  margin-bottom: 3rem;
+}
+/* para criar o triangulo*/
+#alert::after{
+  content: "";
+  width: 0;
+  height: 0;
+  position:absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid red;
+  top:-20px;
+  left: 20%;
+}
+
+.alert{
+  width: 50px;
+}
+/* aqui é para o h4*/
+#alert .falas{
+  align-self: center;
+
+}
+
+/* aqui é para o p*/
+.fala{
+  margin-top: 0;
+  align-self: center;
+  margin-left: 3rem;
+
+}
+
+#footer{
+  background-color:#E2797D;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.direitos{
+  margin-top: 5rem;
+}
+
+.ref{
+  width: 50px;
+}
+
+#button{
+  display: flex;
+  justify-content: center;
+  padding: .5rem;
+}
